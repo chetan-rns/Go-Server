@@ -3,6 +3,8 @@ kind: Deployment
 metadata:
   name: sample-deployment
   namespace: s2i-test
+  labels:
+    app: s2i
 spec:
   selector:
     matchLabels:
@@ -12,7 +14,7 @@ spec:
     metadata:
       labels:
         app: s2i
-    spec:
+    spec: 
       containers:
         - name: hello-openshift
           image: quay.io/cbanavik/test:latest
