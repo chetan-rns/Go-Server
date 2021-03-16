@@ -1,3 +1,3 @@
-module github.com/chetan-rns/Go-Server
+module github.com/chetan-rns/go-server
 
 go 1.13
